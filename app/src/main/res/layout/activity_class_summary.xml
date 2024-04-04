@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassSummaryActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:textColor="#FFFF8011"
+       android:layout_height="60dp"
+       android:text="Class Summary"
+       android:gravity="center"
+       android:textSize="25sp"
+       android:textStyle="bold"/>
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:background="#EEEEEE"
+       android:layout_margin="8dp"
+       android:padding="12dp">
+      <TableRow>
+         <TextView
+             android:text="Name"
+             android:textSize="16sp"/>
+         <TextView android:text=":"
+             android:textSize="16sp"
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"/>
+         <EditText
+             android:id="@+id/tvname"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:textSize="16sp"
+             android:hint="Enter Name"/>
+      </TableRow>
+
+      <TableRow>
+         <TextView
+             android:text="ID"
+             android:textSize="16sp"/>
+         <TextView
+             android:text=":"
+             android:textSize="16sp"
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"/>
+         <EditText
+             android:id="@+id/tvID"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:textSize="16sp"
+             android:hint="Enter ID"/>
+      </TableRow>
+
+      <TableRow>
+         <TextView
+             android:layout_height="match_parent"
+             android:paddingTop="10dp"
+             android:text="Course"
+             android:textSize="16sp"
+             />
+         <TextView
+             android:text=":"
+             android:textSize="16sp"
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"
+             />
+         <RadioGroup
+             android:id="@+id/rgCourse"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="CSE477"/>
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="CSE479"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="CSE445"/>
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="CSE490"/>
+            </LinearLayout>
+
+         </RadioGroup>
+      </TableRow>
+      <TableRow>
+         <TextView
+             android:text="Type"
+             android:textSize="16sp"
+             android:layout_gravity="center_vertical" />
+         <TextView
+             android:text=":"
+             android:textSize="16sp"
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"
+             android:layout_gravity="center_vertical"/>
+         <!-- Type RadioGroup -->
+         <RadioGroup
+             android:id="@+id/rgType"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Theory"/>
+               <RadioButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Lab"/>
+            </LinearLayout>
+
+         </RadioGroup>
+      </TableRow>
+
+      <TableRow>
+
+         <TextView
+             android:text="Date"
+             android:textSize="16dp"
+             />
+
+         <TextView
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"
+             android:text=""
+             android:textSize="16sp">
+         </TextView>
+
+         <EditText
+             android:id="@+id/etdate"
+             android:text=""
+             android:width="0dp"
+             android:layout_weight="1"
+             android:textSize="16sp"
+             android:inputType="date"
+             />
+
+      </TableRow>
+      <TableRow>
+
+         <TextView
+             android:text="Lecture"
+             android:textSize="16dp"
+             />
+
+         <TextView
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"
+             android:text=""
+             android:textSize="16sp">
+         </TextView>
+
+         <EditText
+             android:id="@+id/etLecture"
+             android:text=""
+             android:width="0dp"
+             android:layout_weight="1"
+             android:textSize="16sp"
+             android:inputType="textCapWords"
+             android:hint="Enter Lecture Number"
+             />
+
+      </TableRow>
+      <TableRow>
+
+         <TextView
+             android:text="Topic"
+             android:textSize="16dp"
+             />
+
+         <TextView
+             android:paddingLeft="8dp"
+             android:paddingRight="8dp"
+             android:text=""
+             android:textSize="16sp">
+         </TextView>
+
+         <EditText
+             android:id="@+id/ettopic"
+             android:text=""
+             android:width="0dp"
+             android:layout_weight="1"
+             android:textSize="16sp"
+             android:inputType="textCapWords"
+             android:hint="Enter Topic Title"
+             />
+
+      </TableRow>
+
+      <TextView
+          android:text="Summary of the Lecture"
+          android:textStyle="bold"
+          android:textSize="16sp"
+          />
+      <FrameLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:background="#888888">
+      <EditText
+          android:id="@+id/etSummary"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:paddingLeft="8dp"
+          android:paddingRight="8dp"
+          android:layout_weight="1"
+          android:text=""
+          android:textSize="16sp"
+          android:inputType="textCapWords|textMultiLine"
+          android:padding="10dp"
+          android:hint="Insert summary of the lecture..."/>
+      </FrameLayout>
+   </TableLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal">
+      <Button
+          android:id="@+id/btnCancel"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:text="Cancel"
+          android:backgroundTint="#FFBB02"
+          android:textColor="@color/black"
+          android:textSize="18dp" />
+      <Button
+          android:id="@+id/btnSave"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:text="Save"
+          android:backgroundTint="#FFBB02"
+          android:textColor="@color/black"
+          android:textSize="18dp"/>
+   </LinearLayout>
+
+</LinearLayout>

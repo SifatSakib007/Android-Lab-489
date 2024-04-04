@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup_login_activity"
+    android:orientation="vertical"
+    android:background="#ECECEC">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Signup"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#302F2F"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ECECEC"
+        android:layout_margin="7dp"
+        android:padding="10dp">
+
+    <TableRow
+        android:id="@+id/rowName">
+        <!--
+        <TextView
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="#E8E8E8"/>
+!-->
+        <EditText
+            android:id="@+id/etName"
+
+            android:layout_weight="1"
+            android:width="0dp"
+            android:autofillHints=""
+            android:hint="@string/Enter_your_name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#302F2F" />
+    </TableRow>
+
+
+        <TableRow
+            android:id="@+id/rowEmail"
+            android:layout_marginTop="10dp">
+            <!--<TextView
+                android:text="@string/email"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="40dp"/>
+!-->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:hint="@string/Enter_email_address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#302F2F"
+                android:autofillHints="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowPhone"
+            android:layout_marginTop="10dp">
+            <!--<TextView
+                android:text="@string/phone"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="40dp"/>
+!-->
+            <EditText
+                android:id="@+id/etPhone"
+                android:width="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:hint="Enter phone number: with +880"
+                android:autofillHints=""
+                android:textColorHint="#302F2F" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowUserId"
+            android:layout_marginTop="10dp">
+            <!--<TextView
+                android:text="@string/user_id"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="40dp"/>
+!-->
+            <EditText
+                android:id="@+id/etUserId"
+                android:width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:hint="Enter 4-8 characters..."
+                android:autofillHints=""
+                android:textColorHint="#302F2F" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowPassword"
+            android:layout_marginTop="10dp">
+            <!--<TextView
+                android:text="@string/password"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="40dp"/>
+!-->
+            <EditText
+                android:id="@+id/etPassword"
+                android:width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberPassword"
+                android:hint="Enter same password..."
+                android:autofillHints=""
+                android:textColorHint="#302F2F" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowRePassword"
+            android:layout_marginTop="10dp">
+            <!--<TextView
+                android:text="@string/confirm_pass"
+                android:textSize="16sp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="40dp"/>-->
+            <EditText
+                android:id="@+id/etRePassword"
+                android:width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberPassword"
+                android:hint="Input at least 6 characters..."
+                android:textColorHint="#302F2F" />
+        </TableRow>
+
+        <CheckBox
+            android:id="@+id/CheckRemUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_user_id"
+            android:textColor="#302F2F"
+            android:layout_marginTop="20dp"
+            />
+        <CheckBox
+
+            android:id="@+id/CheckRemPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_password"
+            android:textColor="#302F2F"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvToggleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp"
+                android:textColor="#302F2F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/login"
+                android:textColor="#0000bb"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shadow"
+        android:elevation="25dp">
+
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/exit"
+            android:textSize="18sp"
+            android:backgroundTint="#302F2F"
+            android:textColor="#fff"
+            android:elevation="25dp"
+
+
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="@string/go"
+            android:backgroundTint="#302F2F"
+            android:textColor="#fff"
+            android:elevation="25dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
